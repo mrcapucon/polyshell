@@ -1,0 +1,1 @@
+gcc -Wall Kernel.c Serv.c MyCd.c MyPs.c MyPwd.c MyDu.c MyRm.c MyEcho.c MyCd.c -o Final

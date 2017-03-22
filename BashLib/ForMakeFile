@@ -1,0 +1,16 @@
+gcc -fPIC -c  MyCd.c MyPwd.c MyDu.c MyRm.c MyEcho.c MyCat.c MyChmod.c MyCp.c MyLs.c MyMkdir.c
+gcc -o LibFunc.so -shared MyCd.o MyPwd.o MyDu.o MyRm.o MyEcho.o MyCat.o MyChmod.o MyCp.o MyLs.o MyMkdir.o
+gcc -Wall Kernel.c Serv.c -o Final -Wl,--no-as-needed -ldl
+
+
+ name[0]="cd";
+    name[1]="du";
+    name[2]="echo";
+    name[3]="pwd";
+    name[4]="rm";
+    name[5]="cat";
+    name[6]="chmod";
+    name[7]="cp";
+    name[8]="ls";
+    name[9]="mkdir";
+    
